@@ -1,5 +1,14 @@
 # Automated AI QA Pipeline
 
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![FastAPI 0.100+](https://img.shields.io/badge/FastAPI-0.100%2B-009688.svg)](https://fastapi.tiangolo.com/)
+[![Docker Ready](https://img.shields.io/badge/Docker-ready-2496ED.svg)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+# Automated AI QA Pipeline
+
 Multi-dimensional LLM output evaluation pipeline — built for scale. Scores model responses across **factual accuracy, coherence, instruction-following, and safety** using a weighted aggregation layer on top of LangChain retrieval, LLM-as-judge, and rule-based signals.
 
 Built from real evaluation work — the core problem: manual QA of LLM outputs at scale is slow, inconsistent, and expensive. This pipeline replaces manual review for clear-cut cases and routes ambiguous ones to human reviewers automatically.
