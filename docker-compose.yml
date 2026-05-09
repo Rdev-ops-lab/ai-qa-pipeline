@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  qa-pipeline:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./outputs:/app/outputs
+
+  qa-pipeline-mock:
+    build: .
+    ports:
+      - "8001:8000"
+    environment:
+      - USE_MOCK=true
+    profiles:
+      - mock
